@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Gestión de Matrículas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Sistema de Gestión de Matrículas</h1>
+    </header>
+
+    <main>
+        <!-- Inicio de Sesión -->
+        <section id="login-section">
+            <h2>Iniciar Sesión</h2>
+            <input type="text" id="username" placeholder="Nombre de usuario">
+            <button onclick="login()">Iniciar Sesión</button>
+        </section>
+
+        <!-- Matriculación -->
+        <section id="matricula-section" style="display: none;">
+            <h2>Matricularse en un Curso</h2>
+            <select id="course-list"></select>
+            <button onclick="enroll()">Matricularse</button>
+            <p id="matricula-message"></p>
+        </section>
+
+        <!-- Reportes -->
+        <section id="report-section" style="display: none;">
+            <h2>Generar Reportes</h2>
+            <button onclick="generateReport()">Generar Reporte</button>
+            <div id="report-output"></div>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
